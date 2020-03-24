@@ -14,8 +14,11 @@ msg: .asciz "Hello ASM from .data"
 # - Dans quelle segment de la mémoire est elle?
 # - Quelle sont les valeurs en hexadecimales présente dans .data?
 
-la a0, ??? # argument de l'appel systeme
-li a7, ??? # appel systeme 4 selon la doc de Rars printString
+la a0, msg # argument de l'appel systeme
+li a7, 4 # appel systeme 4 selon la doc de Rars printString
 ecall # Peret de basculer en mode kernel pour faire l'appel systeme.
 
 # Bonus: Afficher maintenant un nombre, vous aurrez besoin de la documentation.
+li a0, 55 # argument de l'appel systeme
+li a7, 1 # appel systeme 4 selon la doc de Rars printString
+ecall
