@@ -1,3 +1,4 @@
+  
 # Exercice 0
 # Faire une addition dans un registre
 
@@ -9,6 +10,6 @@
 
 mon_code: # <- Label
 li   t0, 32
-addi t0, t0, 0
+addi t0, t0, 32
 
 # Bonus: avoir 64 dans un registre en une seule instruction
